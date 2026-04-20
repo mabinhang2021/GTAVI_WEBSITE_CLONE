@@ -1,6 +1,7 @@
 import React from "react";
 import ComingSoon from "./ComingSoon";
 import { useMaskSettings } from "../../constants";
+import ViceCity from "./ViceCity";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -13,22 +14,14 @@ const Hero = () => {
       maskPosition: initialMaskPos,
       maskSize: initialMaskSize,
     });
-
-    // gsap.set(".mask-logo", {
-    //   marginTop: "-100vh",
-    //   opacity: 0,
-    // });
-
-    // gsap.set(".entrance-message", {
-    //   marginTop: "0vh",
-    // });
+    gsap.set(".vice-city-same-text", { opacity: 0 });
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".hero-section",
         pin: true,
         start: "top top",
-        end: "+=200%",
+        end: "+=400%",
         scrub: 2.5,
       },
     });
@@ -54,7 +47,33 @@ const Hero = () => {
             "radial-gradient(circle at 50% 0vh,black 50%,transparent 100%)",
         },
         "<",
-      );
+      )
+      .to(".entrance-message", {
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut",
+      })
+      .to(
+        ".overlay-logo",
+        {
+          opacity: 0,
+          duration: 1,
+          ease: "power1.inOut",
+        },
+        "<",
+      )
+      .to(".vice-city-same-text", {
+        scale: 0.7,
+        opacity: 1,
+        duration: 1,
+        maskImage:
+          "radial-gradient(circle at 50% 100%, black 100%, transparent 100%)",
+        ease: "power1.inOut",
+      })
+      .to(".vice-city-same-text", {
+        opacity: 0,
+        duration: 0.5,
+      });
   });
 
   return (
@@ -92,6 +111,7 @@ const Hero = () => {
         <img src="/images/big-hero-text.svg" className="overlay-logo" />
       </div>
       <ComingSoon />
+      <ViceCity />
     </section>
   );
 };
