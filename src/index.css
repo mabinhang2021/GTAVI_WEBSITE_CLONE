@@ -109,7 +109,12 @@ main {
       @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
     }
   }
-  .shoot{
+  .second-vd-wrapper {
+    .second-vd {
+      @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
+    }
+  }
+  .shoot {
     .shoot-vd {
       @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
     }
@@ -155,7 +160,7 @@ main {
     h1 {
       @apply text-yellow uppercase mb-20;
       font-family: "GTAArtDeco-Bold", sans-serif;
-      font-size:  4vw;  
+      font-size: 4vw;
       line-height: 0.9;
       letter-spacing: 0;
       padding-top: 100px;
@@ -189,7 +194,7 @@ main {
     }
   }
   .next-jason {
-    @apply relative z-10 py-40 mt-60 w-dvw overflow-x-hidden ;
+    @apply relative z-10 py-40 mt-60 w-dvw overflow-x-hidden;
 
     .next-jason-title {
       width: 1257.25px;
@@ -231,8 +236,15 @@ main {
         width: 615px;
         height: 250px;
         letter-spacing: -2px;
-        
       }
+    }
+    .left-column {
+      width: 1264px; /* 或你需要的宽度 */
+    }
+
+    .next-jason-1,
+    .next-jason-2 {
+      margin-left: auto; /* 让它们靠右对齐 */
     }
 
     .next-jason-1 {
@@ -252,7 +264,7 @@ main {
     }
 
     .next-jason-3 {
-      @apply bg-yellow md:w-[947px] md:h-[1685px] w-full ;
+      @apply bg-yellow md:w-[947px] md:h-[1685px] w-full;
 
       img {
         @apply size-full object-cover [object-position:80%_center] hover:scale-x-[0.97] hover:scale-y-[0.98] transition duration-700 ease-in-out;
@@ -261,19 +273,23 @@ main {
   }
 
   .lucia {
-    @apply relative;
-  }
-  .lucia-life {
     @apply relative z-10 py-40 mt-60 flex lg:flex-row flex-col justify-between gap-5 w-dvw overflow-x-hidden;
 
     h1 {
       @apply text-yellow font-long uppercase text-8xl mb-20;
+      font-family: "GTAArtDeco-Bold", sans-serif;
+      font-size: 147px;
+      width: 775px;
     }
     h2 {
-      @apply text-pink md:text-5xl text-3xl mb-7 md:pe-20 pe-10;
+      @apply text-pink md:text-5xl text-[70px] mb-7 md:pe-20 pe-10;
+      font-family: "GTAArtDecoMedium", sans-serif;
+      width: 615px;
     }
     p {
-      @apply text-white md:text-2xl text-lg md:pe-28 pe-14;
+      @apply text-white md:text-2xl text-[38px] md:pe-28 pe-14;
+      font-family: "GTAArtDecoMedium", sans-serif;
+      width: 615px;
     }
     p:last-of-type {
       @apply md:hidden block xl:block;
@@ -300,6 +316,129 @@ main {
       }
     }
   }
+  .car {
+    .car-vd {
+      @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
+    }
+  }
+  .next-lucia {
+    @apply relative z-10 py-40 mt-60 w-dvw overflow-x-hidden;
+
+    .next-lucia-title {
+      width: 1600.25px;
+      height: 253.5px;
+    }
+
+    h1 {
+      @apply text-yellow;
+      font-size: 90px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 90px;
+      letter-spacing: -2px;
+    }
+
+    .next-lucia-content {
+      padding-left: max(5vw, 10vh);
+      margin-bottom: 20px;
+
+      h2 {
+        @apply text-pink mb-7;
+        font-family: "GTAArtDecoBold", sans-serif;
+        font-size: 70px;
+        font-weight: 500;
+        width: 615px;
+        height: 154px;
+        letter-spacing: -2px;
+        line-height: 80px;
+      }
+    }
+
+    .next-lucia-text {
+      @apply pt-20 pb-20 flex items-center justify-center;
+      p {
+        @apply text-white text-center;
+        font-family: "GTAArtDecoMedium", sans-serif;
+        font-size: 38px;
+        font-weight: 500;
+        width: 615px;
+        height: 250px;
+        letter-spacing: -2px;
+      }
+    }
+    
+    .left-column {
+      width: 1264px; /* 或你需要的宽度 */
+    }
+
+    .next-lucia-1,
+    .next-lucia-2 {
+      margin-left: 0;
+    }
+
+    .next-lucia-1 {
+      @apply bg-yellow md:w-[1264px] md:h-[1264px] w-full h-[50vw];
+
+      img {
+        @apply size-full object-cover [object-position:5%_center] hover:scale-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-lucia-2 {
+      @apply bg-yellow md:w-[785px] md:h-[785px] w-full h-[50vw];
+
+      img {
+        @apply size-full object-cover [object-position:42%_center] hover:scale-[0.97] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-lucia-3 {
+      @apply bg-yellow md:w-[947px] md:h-[1685px] w-full;
+
+      img {
+        @apply size-full object-cover [object-position:80%_center] hover:scale-x-[0.97] hover:scale-y-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+  }
+
+  .text-section {
+    @apply w-dvw overflow-x-hidden;
+
+    .text-grid {
+      @apply grid md:grid-cols-2 gap-0 w-full h-full pl-60;
+    }
+
+    .text-h1-wrapper {
+      @apply flex justify-center items-center;
+
+      h1 {
+        @apply text-center uppercase;
+        font-family: "GTAArtDecoBold", sans-serif;
+        font-size: 179px;
+        letter-spacing: -2px;
+        line-height: 160px;
+        background: linear-gradient(to right, #ffb0c4, #ff6b35);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+
+    .text-p-wrapper {
+      @apply flex justify-center items-center;
+
+      p {
+        @apply text-center;
+        font-family: "GTAArtDecoMedium", sans-serif;
+        font-size: 51px;
+        background: linear-gradient(to right, #ffb0c4, #ff6b35);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
   .post-card {
     @apply relative flex justify-center items-center pb-80 shadow-2xl;
 

@@ -16,6 +16,7 @@ const NextJason = () => {
     gsap.set(".next-jason-text", {
       y: -50,
     });
+    
     gsap
       .timeline({
         scrollTrigger: {
@@ -56,7 +57,7 @@ const NextJason = () => {
         </h1>
       </div>
       <div className="grid md:grid-cols-2 gap-20 w-full px-4">
-        <div className="flex flex-col">
+        <div className="flex flex-col left-column">
           <div className="next-jason-content">
             <h2>Another day in paradise,right?</h2>
           </div>

@@ -48,6 +48,7 @@ const FirstVideo = () => {
           src="/videos/output1.mp4"
           muted
           playsInline
+          preload="auto"
         />
       </div>
     </section>

@@ -26,7 +26,7 @@ const ShootVideo = () => {
          ".shoot",
          {
             delay:1,
-           duration: 2,
+           duration: 3,
            opacity: 1,
            ease: "power1.inOut",
          },
@@ -46,7 +46,7 @@ const ShootVideo = () => {
        };
      }, []);
   return (
-    <section className=" shoot">
+    <section className="shoot">
       <div className="h-dvh">
         <video
           ref={shootVideo}
