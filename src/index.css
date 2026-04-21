@@ -109,6 +109,11 @@ main {
       @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
     }
   }
+  .shoot{
+    .shoot-vd {
+      @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
+    }
+  }
   .entrance-message {
     @apply absolute inset-0 w-full h-dvh overflow-hidden z-20 opacity-100;
 
@@ -183,6 +188,78 @@ main {
       }
     }
   }
+  .next-jason {
+    @apply relative z-10 py-40 mt-60 w-dvw overflow-x-hidden ;
+
+    .next-jason-title {
+      width: 1257.25px;
+      height: 253.5px;
+    }
+
+    h1 {
+      @apply text-yellow;
+      font-size: 90px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 90px;
+      letter-spacing: -2px;
+    }
+
+    .next-jason-content {
+      padding-left: max(5vw, 10vh);
+      margin-bottom: 20px;
+
+      h2 {
+        @apply text-pink mb-7;
+        font-family: "GTAArtDecoBold", sans-serif;
+        font-size: 70px;
+        font-weight: 500;
+        width: 615px;
+        height: 154px;
+        letter-spacing: -2px;
+        line-height: 80px;
+      }
+    }
+
+    .next-jason-text {
+      @apply pt-20 pb-20 flex items-center justify-center;
+      p {
+        @apply text-white text-center;
+        font-family: "GTAArtDecoMedium", sans-serif;
+        font-size: 38px;
+        font-weight: 500;
+        width: 615px;
+        height: 250px;
+        letter-spacing: -2px;
+        
+      }
+    }
+
+    .next-jason-1 {
+      @apply bg-yellow md:w-[1264px] md:h-[1264px] w-full h-[50vw];
+
+      img {
+        @apply size-full object-cover [object-position:5%_center] hover:scale-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-jason-2 {
+      @apply bg-yellow md:w-[785px] md:h-[785px] w-full h-[50vw] me-0 ms-auto;
+
+      img {
+        @apply size-full object-cover [object-position:42%_center] hover:scale-[0.97] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-jason-3 {
+      @apply bg-yellow md:w-[947px] md:h-[1685px] w-full ;
+
+      img {
+        @apply size-full object-cover [object-position:80%_center] hover:scale-x-[0.97] hover:scale-y-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+  }
+
   .lucia {
     @apply relative;
   }
