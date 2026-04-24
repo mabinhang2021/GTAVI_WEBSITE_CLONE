@@ -316,6 +316,32 @@ main {
       }
     }
   }
+  .cal {
+    @apply relative z-10 w-dvw h-screen overflow-hidden;
+    font-family: "GTAArtDecoMedium", sans-serif;
+    background-image: url(/images/Cal-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .cal-content {
+      @apply h-full flex flex-col justify-center ps-95;
+      max-width: 900px;
+    }
+
+    h1 {
+      @apply text-yellow uppercase mb-20;
+      font-family: "GTAArtDeco-Bold", sans-serif;
+      font-size: 4vw;
+      line-height: 0.9;
+      letter-spacing: 0;
+    }
+    h2 {
+      @apply text-blue-400 md:text-5xl text-3xl mb-7 md:pe-20 pe-10;
+    }
+    p {
+      @apply text-white md:text-2xl text-lg md:pe-28 pe-14;
+    }
+  }
   .car {
     .car-vd {
       @apply size-full object-cover md:[object-position:50%_center] [object-position:75%_center];
@@ -366,7 +392,7 @@ main {
         letter-spacing: -2px;
       }
     }
-    
+
     .left-column {
       width: 1264px; /* 或你需要的宽度 */
     }
@@ -401,40 +427,150 @@ main {
     }
   }
 
-  .text-section {
+  .next-cal {
+    --mt-left-column: 338px;
+    --mt-cal-2: 40px;
+    --mt-cal-3: 20px;
+    --mt-cal-5: 300px;
+    --mt-description: 300px;
+
+    @apply relative z-10 w-dvw overflow-x-hidden;
+    background-color: rgb(40, 55, 92);
+
+    .next-cal-grid {
+      @apply grid md:grid-cols-2 gap-8 w-full;
+    }
+
+    .left-column {
+      @apply flex flex-col items-end;
+      margin-top: var(--mt-left-column);
+    }
+
+    .right-column {
+      @apply flex flex-col items-start;
+    }
+
+    .next-cal-1 {
+      @apply bg-blue-300 w-[959px] h-[959px];
+
+      img {
+        @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-cal-2 {
+      @apply w-[1266px] h-[1246px];
+      margin-top: var(--mt-cal-2);
+
+      video {
+        @apply size-full object-cover;
+      }
+    }
+
+    .next-cal-3 {
+      @apply bg-blue-300 w-[795px] h-[1413px];
+      margin-top: var(--mt-cal-3);
+
+      img {
+        @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-cal-4 {
+      @apply bg-blue-300 w-[1297px] h-[1297px];
+
+      img {
+        @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-cal-text {
+      @apply flex items-center justify-center w-[1266px] h-[1246px];
+
+      p {
+        @apply text-yellow-400 text-center;
+        font-family: "GTAArtDecoBold", sans-serif;
+        font-size: 100px;
+        line-height: 100px;
+        letter-spacing: -2px;
+        width: 976px;
+        font-weight: 700;
+      }
+    }
+
+    .next-cal-5 {
+      @apply bg-blue-300 w-[770px] h-[770px];
+      margin-top: var(--mt-cal-5);
+
+      img {
+        @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+      }
+    }
+
+    .next-cal-description {
+      @apply w-[615px];
+      margin-top: var(--mt-description);
+
+      h2 {
+        @apply text-blue-500 flex justify-center items-center;
+        font-family: "GTAArtDecoBold", sans-serif;
+        font-size: 70px;
+        line-height: 77px;
+        letter-spacing: -2px;
+        width: 635px;
+        height: 212px;
+      }
+
+      p {
+        @apply text-white flex justify-center items-center;
+        font-family: "GTAArtDecoMedium", sans-serif;
+        font-size: 38px;
+        line-height: 50px;
+        letter-spacing: -2px;
+        width: 615px;
+        height: 199px;
+      }
+    }
+  }
+
+  .leonida-section {
     @apply w-dvw overflow-x-hidden;
 
-    .text-grid {
+    .leonida-grid {
       @apply grid md:grid-cols-2 gap-0 w-full h-full pl-60;
     }
 
-    .text-h1-wrapper {
+    .leonida-h1-wrapper {
       @apply flex justify-center items-center;
 
       h1 {
-        @apply text-center uppercase;
+        @apply text-center uppercase text-transparent bg-clip-text;
         font-family: "GTAArtDecoBold", sans-serif;
         font-size: 179px;
         letter-spacing: -2px;
         line-height: 160px;
-        background: linear-gradient(to right, #ffb0c4, #ff6b35);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 185, 156) 0%,
+          rgb(255, 249, 203) 100%
+        );
+        background-size: 200% 100%;
       }
     }
 
-    .text-p-wrapper {
+    .leonida-p-wrapper {
       @apply flex justify-center items-center;
 
       p {
-        @apply text-center;
+        @apply text-center text-transparent bg-clip-text;
         font-family: "GTAArtDecoMedium", sans-serif;
         font-size: 51px;
-        background: linear-gradient(to right, #ffb0c4, #ff6b35);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 185, 156) 0%,
+          rgb(255, 249, 203) 100%
+        );
+        background-size: 200% 100%;
       }
     }
   }

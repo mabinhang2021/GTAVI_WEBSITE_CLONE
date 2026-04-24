@@ -11,7 +11,12 @@ import Lucia from "./sections/Lucia";
 import CarVideo from "./sections/CarVideo";
 import NextLucia from "./sections/NextLucia";
 import Hotel from "./sections/Hotel";
-import Text from "./sections/Text";
+import Leonida from "./sections/Leonida";
+import Cal from "./sections/Cal";
+import NextCal from "./sections/NextCal";
+import PostCard from "./sections/PostCard";
+import Final from "./sections/Final";
+import Outro from "./sections/Outro";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,8 +37,14 @@ const App = () => {
       <NextLucia />
 
       <Hotel />
-      <Text/>
-      
+      <Leonida />
+
+      <Cal />
+      <NextCal />
+      <PostCard />
+
+      <Final/>
+      <Outro/>
     </main>
   );
 };

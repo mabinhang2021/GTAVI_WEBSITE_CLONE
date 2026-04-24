@@ -41,6 +41,7 @@ const NextLucia = () => {
             end: "80% center",
             scrub: 2,
           },
+          delay: 1,
           y: -300,
           duration: 1,
           ease: "power1.inOut",

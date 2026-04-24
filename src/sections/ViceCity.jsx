@@ -3,37 +3,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const ViceCity = () => {
-  // useGSAP(() => {
-  //   gsap.set(".vice-city-same-text", { opacity: 0 });
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".vice-city-section",
-  //       start: "top top",
-  //       end: "+=200%",
-  //       scrub: 2.5,
-  //       pin: true,
-  //     },
-  //   });
-
-  //   tl.to("entrance-message", {
-  //     opacity: 0,
-  //     duration: 1,
-  //     ease: "power1.inOut",
-  //   })
-
-  //     .to(".vice-city-same-text", {
-  //       scale: 0.7,
-  //       opacity: 1,
-  //       duration: 1,
-  //       maskImage:
-  //         "radial-gradient(circle at 50% 100%, black 100%, transparent 100%)",
-  //       ease: "power1.inOut",
-  //     })
-  //     .to(".vice-city-same-text", {
-  //       opacity: 0,
-  //       duration: 0.5,
-  //     });
-  // });
+  
+ 
 
   return (
     <section className="vice-city-section">

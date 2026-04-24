@@ -26,7 +26,7 @@ const ShootVideo = () => {
          ".shoot",
          {
             delay:1,
-           duration: 3,
+           duration: 2,
            opacity: 1,
            ease: "power1.inOut",
          },
@@ -39,7 +39,7 @@ const ShootVideo = () => {
            {
              currentTime: shootVideo.current.duration,
              ease: "power1.inOut",
-             duration: 3,
+             duration: 2,
            },
            "<",
          );

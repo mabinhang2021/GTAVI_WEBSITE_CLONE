@@ -99,14 +99,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <div>
-        <img
-          src="/images/big-hero-text.svg"
-          alt="logo"
-          className="size-full object-cover mask-logo"
-        />
-      </div> */}
-
       <div className="fake-logo-wrapper">
         <img src="/images/big-hero-text.svg" className="overlay-logo" />
       </div>
